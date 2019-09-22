@@ -1,0 +1,56 @@
+<form action="/action_page.php">  
+<button class="dropbtn">Qty</button>
+
+<div class="dropdown-content">
+  <select name="Qty">
+     <option value="1">1</option>
+     <option value="2">2</option>
+     <option value="3">3</option>
+     <option value="4">4</option>
+     <option value="5">5</option>
+ </select>
+
+ onclick='myfunction("+i+", 1)'
+
+onclick="myFunction()"
+
+
+Create a website where I can track easily stock movement
+
+
+- create a decrease button for every single line of stock - take the list from excel -
+ to display the remaining stock-
+ -alert whenever stock < 3 units
+-one column for stockroom and one for the shop floor
+
+
+var user1 = {name : "nerd", org: "dev"};
+var user2 = {name : "nerd", org: "dev1"};
+var eq = JSON.stringify(user1) === JSON.stringify(user2);
+alert(eq);
+
+
+
+log in
+const giveAccessTo = (name) =>
+  'Access Granted to ' + name;
+
+function authenticate(person) {
+
+  return giveAccessTo(person.name)
+}
+
+function letPerson(person, fn) { // ++ We now tell the function what data to use when we call it not when we define it + tell it what to do.
+  if (person.level === 'admin') {
+    return fn(person)
+  } else if (person.level === 'user') {
+    return fn(person)
+  }
+}
+
+function sing(person) {
+  return 'la la la my name is ' + person.name
+}
+
+var answer = letPerson({level: "admin", name: "Sally"}, authenticate)
+console.log(answer)

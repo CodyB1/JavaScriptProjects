@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <title>Fenwick stock control</title>
+    <head>
+
+  </head>
+  <body>
+    <div>
+        <form onsubmit="getFormData(event)">
+            Product Name:<br>
+            <input type="text" name="Product Name" id="productName">
+            <br>
+            Shop Floor units:<br>
+            <input type="text" name="sFu" id="sFu">
+            <br>
+            Stock Room units:<br>
+            <input type="text" name="sRu" id="sRu">
+            <br><br>
+            <input type="submit" value="ADD ITEM">
+        </form>
+    </div>
+    <div class="terryStock">
+      <table style="border:1px solid black; width:100%">
+        <thead>
+
+        </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+        <tr>
+
+        </tr>
+      </table>
+
+
+    </div>
+
+    <script src="stockcontrol.js"></script>
+  </body>
+</html>
